@@ -8,14 +8,16 @@ public class Auto {
     int registro;
     static int cantidadcreados;
 
-    int asientos(){
-        int contador = 0;
-        for(int i = 0; i < asientos.length; i++){
-            if(asientos[i] != null){
-                contador++;
+    int cantidadAsientos() {
+        int count = 0;
+        for (Asiento asiento : asientos) {
+            if (asiento != null) {
+                count++;
             }
         }
+        return count;
     }
+
     String verificarIntegridad(){
         if(this.registro == this.motor.registro) {
             for( int i = 0; i <asientos.length; i++){
