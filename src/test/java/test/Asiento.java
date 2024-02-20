@@ -1,3 +1,4 @@
+package test;
 public class Asiento {
     int precio;
     String color;
@@ -10,6 +11,5 @@ public class Asiento {
                 return;
             }
         }
-        System.out.println("Color no permitido.");
     }
 }
